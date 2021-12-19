@@ -1,5 +1,6 @@
 package com.example.webappdisample.di.common
 
+import com.example.webappdisample.di.webapp_screen.WebappScreenSubcomponent
 import com.example.webappdisample.dummy.OtherModulePublicApi
 import dagger.Component
 import javax.inject.Singleton
@@ -14,5 +15,5 @@ import javax.inject.Singleton
 )
 @Singleton
 internal interface WebappComponent {
-
+    fun webappScreenSubcomponent(): WebappScreenSubcomponent
 }

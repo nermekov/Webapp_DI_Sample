@@ -1,4 +1,3 @@
 package com.example.webappdisample.presentation
 
-internal class WebappFragment {
-}
+internal class WebappFragment
