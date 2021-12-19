@@ -1,3 +1,0 @@
-package com.example.webappdisample.di
-
-internal interface WebappScreenSubmodule

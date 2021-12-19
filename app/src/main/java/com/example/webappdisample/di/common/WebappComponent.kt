@@ -1,4 +1,4 @@
-package com.example.webappdisample.di
+package com.example.webappdisample.di.common
 
 import dagger.Component
 
