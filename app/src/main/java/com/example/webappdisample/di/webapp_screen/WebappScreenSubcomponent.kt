@@ -1,0 +1,4 @@
+package com.example.webappdisample.di.webapp_screen
+
+@NarimsScope
+internal interface WebappScreenSubcomponent
