@@ -1,7 +1,9 @@
 package com.example.webappdisample
 
 import com.example.webappdisample.domain.WebappRepository
+import com.example.webappdisample.dummy.DelegateA
 import com.example.webappdisample.dummy.DelegateAImpl
+import com.example.webappdisample.dummy.DelegateB
 import com.example.webappdisample.dummy.DelegateBImpl
 import kotlinx.coroutines.flow.MutableSharedFlow
 import javax.inject.Inject
@@ -22,4 +24,12 @@ private class ViewModelNoSubcomponent @Inject constructor (
     private val delegateA = DelegateAImpl(webappRepository, loaderFlow)
     //Придётся перекомпилировать при добавлении новых параметров
     private val delegateB = DelegateBImpl(webappRepository, loaderFlow)
+}
+
+//2. С помощью Subcomponent
+private class ViewModelWithSubcomponent @Inject constructor(
+    //мы не погружены в подробности создания delegates
+    private val delegateA: DelegateA,
+    private val delegateB: DelegateB
+) {
 }
