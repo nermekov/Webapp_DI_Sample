@@ -14,6 +14,6 @@ import javax.inject.Singleton
     ]
 )
 @Singleton
-internal interface WebappComponent {
+internal interface WebappComponent: MyDependencies {
     fun webappScreenSubcomponent(): WebappScreenSubcomponent
 }
